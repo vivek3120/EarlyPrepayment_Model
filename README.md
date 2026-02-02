@@ -1,7 +1,7 @@
-# 📊 Early Loan Prepayment Prediction using Hybrid Machine Learning Model
+# Early Loan Prepayment Prediction using Hybrid Machine Learning Model
 Incorporating Dynamic Borrower Behavior into Machine Learning Models for Forecasting Early Prepayment of  Loans and Customer Retention in Retail Lending. 
 
-## 📌 Project Overview
+## Project Overview
 Early loan prepayment presents a major challenge for financial institutions as it disrupts expected cash flows, interest income, and asset–liability management. Traditional prepayment models typically rely on static borrower and loan characteristics captured at origination, which limits their ability to adapt to evolving borrower behavior over time.
 
 This project investigates early loan prepayment prediction by comparing traditional machine learning models, deep learning sequence-based models, and a novel hybrid neural network architecture that combines static loan attributes with temporal behavioral patterns.
@@ -10,7 +10,7 @@ The project was completed as part of the **Applied Research module** for the **M
 
 ---
 
-## 🎯 Research Objectives
+## Research Objectives
 - Predict early loan prepayment using supervised learning techniques  
 - Compare static, sequential, and hybrid modeling approaches  
 - Analyze performance using business-relevant metrics  
@@ -18,9 +18,9 @@ The project was completed as part of the **Applied Research module** for the **M
 
 ---
 
-## 🧠 Modeling Approaches
+## Modeling Approaches
 
-### 1️⃣ Tabular (Static) Models
+### 1️ Tabular (Static) Models
 - **XGBoost**
 - **Artificial Neural Network (ANN)**  
 
@@ -28,7 +28,7 @@ These models use borrower and loan characteristics such as credit score, loan-to
 
 ---
 
-### 2️⃣ Sequence-Based Models
+### 2️ Sequence-Based Models
 - **Long Short-Term Memory (LSTM)**
 - **1D Convolutional Neural Network (CNN)**  
 
@@ -36,7 +36,7 @@ Sequence models are trained on synthetically generated fixed-length behavioral s
 
 ---
 
-### 3️⃣ Hybrid Model (Proposed Contribution)
+### 3️ Hybrid Model (Proposed Contribution)
 The hybrid architecture consists of:
 - A dense neural network for static tabular features  
 - An LSTM encoder for sequential behavioral data  
@@ -46,7 +46,7 @@ This design allows the model to capture both **long-term borrower risk** and **s
 
 ---
 
-## 🏆 Key Results
+## Key Results
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 |------|----------|-----------|--------|----------|---------|
@@ -56,14 +56,14 @@ This design allows the model to capture both **long-term borrower risk** and **s
 | CNN | ~0.62 | **~1.00** | ~0.25 | ~0.40 | ~0.97 |
 | **Hybrid Model** | **~0.80** | **~0.998** | ~0.61 | **~0.75** | **~0.96** |
 
-### 🔹 Key Observations
+### Key Observations
 - The **Hybrid Model outperforms all baseline models**
 - Achieves **near-perfect precision**, making it suitable for conservative lending strategies
 - Demonstrates strong ranking capability through ROC-AUC performance
 
 ---
 
-## ⚙️ Methodology Highlights
+## Methodology Highlights
 - Proxy definition of early prepayment based on repayment duration  
 - Feature selection designed to avoid label leakage  
 - Synthetic behavioral sequence generation under real-world data constraints  
@@ -73,7 +73,7 @@ This design allows the model to capture both **long-term borrower risk** and **s
 
 ---
 
-## 🚀 Technologies Used
+## Technologies Used
 - Python  
 - Pandas, NumPy  
 - Scikit-learn  
@@ -83,7 +83,7 @@ This design allows the model to capture both **long-term borrower risk** and **s
 
 ---
 
-## 📌 Practical Implications
+## Practical Implications
 - Enables early identification of high-confidence prepayment risks  
 - Supports targeted customer retention strategies  
 - Allows threshold tuning based on business objectives  
@@ -91,14 +91,14 @@ This design allows the model to capture both **long-term borrower risk** and **s
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 - Early prepayment defined using a proxy target variable  
 - Behavioral sequences are synthetically generated  
 - Results may vary across different loan products and datasets  
 
 ---
 
-## 🔮 Future Work
+## Future Work
 - Incorporate real transaction-level repayment data  
 - Extend analysis using survival and time-to-event models  
 - Add explainability techniques (e.g., SHAP, attention mechanisms)  
