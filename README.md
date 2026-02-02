@@ -73,4 +73,38 @@ This design allows the model to capture both **long-term borrower risk** and **s
 
 ---
 
-## 📂 Repository Structure
+## 🚀 Technologies Used
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- XGBoost  
+- TensorFlow / Keras  
+- Matplotlib, Seaborn  
+
+---
+
+## 📌 Practical Implications
+- Enables early identification of high-confidence prepayment risks  
+- Supports targeted customer retention strategies  
+- Allows threshold tuning based on business objectives  
+- Suitable for integration into decision-support and risk management systems  
+
+---
+
+## ⚠️ Limitations
+- Early prepayment defined using a proxy target variable  
+- Behavioral sequences are synthetically generated  
+- Results may vary across different loan products and datasets  
+
+---
+
+## 🔮 Future Work
+- Incorporate real transaction-level repayment data  
+- Extend analysis using survival and time-to-event models  
+- Add explainability techniques (e.g., SHAP, attention mechanisms)  
+- Integrate macroeconomic indicators  
+- Evaluate financial impact and ROI  
+
+---
+
+
